@@ -19,7 +19,7 @@ export class FilmsController {
 
   @Post()
   @UsePipes(ValidationPipe)
-  createUsers(@Body() createFilmDto: CreateFilmDto) {
+  createFilm(@Body() createFilmDto: CreateFilmDto) {
     return this.filmsService.createFilm(createFilmDto);
   }
 
