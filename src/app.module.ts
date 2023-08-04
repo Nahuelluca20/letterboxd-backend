@@ -12,18 +12,6 @@ import entities from './typeorm';
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: (configService: ConfigService) => {
-        console.log('DATABASE_HOST:', configService.get('DATABASE_HOST'));
-        console.log(
-          'POSTGRES_PORT:',
-          configService.get<number>('POSTGRES_PORT'),
-        );
-        console.log('POSTGRES_USER:', configService.get('POSTGRES_USER'));
-        console.log(
-          'POSTGRES_PASSWORD:',
-          configService.get('POSTGRES_PASSWORD'),
-        );
-        console.log('POSTGRES_DB:', configService.get('POSTGRES_DB'));
-
         return {
           type: 'postgres',
           host: configService.get('DATABASE_HOST'),

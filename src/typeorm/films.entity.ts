@@ -39,13 +39,13 @@ export class Film {
   description: string;
 
   @Column({
-    type: 'string',
+    type: 'varchar',
     name: 'backdrop_image',
   })
   backdropImage: string;
 
   @Column({
-    type: 'string',
+    type: 'varchar',
     name: 'cover_image',
   })
   coverImage: string;
@@ -78,5 +78,5 @@ interface ReleasesDetails {
 
 interface ReleasesDetail {
   name: string;
-  image: string; 
+  image: string;
 }

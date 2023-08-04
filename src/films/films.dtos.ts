@@ -1,4 +1,4 @@
-import { IsEmail, IsNotEmpty, MinLength } from "class-validator";
+import { IsEmail, IsNotEmpty, MinLength } from 'class-validator';
 import { IsNumber, IsString, IsArray, ValidateNested } from 'class-validator';
 import { Type } from '@nestjs/class-transformer';
 
