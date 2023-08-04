@@ -10,7 +10,9 @@ import {
 } from '@nestjs/common';
 import { CreateFilmDto } from 'src/films/films.dtos';
 import { FilmsService } from 'src/films/services/films/films.service';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('films')
 @Controller('films')
 export class FilmsController {
   constructor(private readonly filmsService: FilmsService) {}

@@ -1,8 +1,7 @@
-import { IsEmail, IsNotEmpty, MinLength } from 'class-validator';
-import { IsNumber, IsString, IsArray, ValidateNested } from 'class-validator';
+import { MinLength } from 'class-validator';
+import { IsString, IsArray, ValidateNested } from 'class-validator';
 import { Type } from '@nestjs/class-transformer';
 import { ApiProperty } from '@nestjs/swagger';
-import { type } from 'os';
 
 export class CreateFilmDto {
   @IsString()
